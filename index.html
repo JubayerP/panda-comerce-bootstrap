@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <header class="container">
+    <header class="container" id="Home">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#Home">
                     <img src="./images/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,16 +24,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#Shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#Backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#Subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -104,7 +104,7 @@
 
     <main>
         <!-- Categories Start -->
-        <section>
+        <section id="Categories">
             <div class="container text-center my-5">
                 <div class="row gy-5">
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -131,7 +131,7 @@
         <!-- Categories End -->
 
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="Shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -181,7 +181,7 @@
         <!-- shoes section end -->
 
         <!-- Backpack Section Start -->
-        <section class="container my-5">
+        <section class="container my-5" id="Backpack">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card h-100">
@@ -189,7 +189,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Red Bag</h5>
                             <h5>$260</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
                         </div>
                         <div class="m-3">
                             <div class="btn btn-warning">Buy Now > ></div>
@@ -202,7 +203,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Blue Bag</h5>
                             <h5>$260</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
                         </div>
                         <div class="m-3">
                             <div class="btn btn-warning">Buy Now > ></div>
@@ -215,7 +217,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Black Bag</h5>
                             <h5>$260</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
                         </div>
                         <div class="m-3">
                             <div class="btn btn-warning">Buy Now > ></div>
@@ -227,12 +230,24 @@
         <!-- Backpack Section End -->
 
         <!-- Subscribe Section Start -->
-        <section class="container">
-            
+        <section class="container d-flex justify-content-center align-items-center my-5 bg-info py-5 rounded-4" id="Subscribe">
+            <div>
+                <h2 class="text-white">LET'S STAY IN TOUCH</h2>
+                <h6 class="text-white">Get updates on sales, specials and more</h6>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </section>
         <!-- Subscribe Section End -->
     </main>
 
+    <footer>
+        <p class="text-center"><small>&copy; JubayerDev -- Pandacommerce 2022 </small></p>
+    </footer>
 
 
 
